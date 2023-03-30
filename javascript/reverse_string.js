@@ -1,5 +1,9 @@
+// awkward but minimal space used
 function reverseString(str) {
-  // type your code here
+  for (let i=str.length-1; i>=0; i--) {
+    str+=str[i]
+  }
+  return str.slice(str.length/2);
 }
 
 if (require.main === module) {
